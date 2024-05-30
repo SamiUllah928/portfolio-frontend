@@ -2,9 +2,10 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div>
+    <div className="header">
       <div className="left">
-        <h1>PortFolio</h1>
+        <h1>Port</h1>
+        <h1>Folio.</h1>
       </div>
       <div className="right">
         <ul>
@@ -12,10 +13,12 @@ export default function Header() {
             <a href="#">Home</a>
           </li>
           <li>
+            {" "}
             <a href="#">Services</a>
           </li>
           <li>
-            <a href="#">Skills</a>
+            {" "}
+            <a href="#">Skills</a>{" "}
           </li>
           <li>
             <a href="#">Projects</a>
