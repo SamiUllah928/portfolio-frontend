@@ -22,7 +22,7 @@ export default function MyServices() {
         </div>
         <div className="cardOne">
           <BsFiletypeCss className="cards-icon" />
-          <h1>Responsive Web Design</h1>
+          <h1>Responsive Design</h1>
           <p>
             I design and develop responsive websites using HTML, CSS,
             JavaScript, and React.js. Your website will look and function

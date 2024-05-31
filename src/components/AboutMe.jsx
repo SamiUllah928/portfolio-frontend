@@ -1,5 +1,5 @@
 import React from "react";
-import myPic from "./sami.jpg";
+import myPic from "./sam.jpg";
 
 export default function AboutMe() {
   return (
@@ -16,7 +16,7 @@ export default function AboutMe() {
           JavaScript, and React.js, I am eager to contribute to innovative
           projects and expand my skills in a dynamic software development
           environment. I thrive in collaborative settings, enjoy
-          problem-solving, and am committed to continuous learning and growth.
+          problem-solving, and am committed to continuous learning.
         </p>
       </div>
     </div>
