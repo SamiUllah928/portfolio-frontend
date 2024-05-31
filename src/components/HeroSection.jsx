@@ -13,11 +13,13 @@ export default function HeroSection() {
       <div className="hero-content">
         <h3>Hello & Welcome, It's Me</h3>
         <h2>SamiUllah.</h2>
-        <h3>And I'm A FrontEnd Developer</h3>
+        <h3>
+          And I'm A <span className="highlight">FrontEnd Developer</span>
+        </h3>
         <h4>
-          <b>Front-end developer</b> skilled in HTML, CSS, JavaScript, and
-          React.js, seeking an internship to build dynamic, responsive web
-          applications and grow in a collaborative environment.
+          Front-end developer skilled in HTML, CSS, JavaScript, and React.js,
+          seeking an internship to build dynamic, responsive web applications
+          and grow in a collaborative environment.
         </h4>
         <div className="icons">
           <FaFacebook className="facebook" />

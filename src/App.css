@@ -53,22 +53,26 @@
   display: grid;
   grid-template-columns: 50% 50%;
   place-content: center;
-  height: 80vh;
+  height: calc(100vh - 80px);
   color: white;
 }
 .hero-content {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding-inline: 20px;
+  padding-inline: 30px;
 }
 .hero-content h3,
 h4 {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 500;
 }
+.highlight {
+  font-size: 25px;
+  color: var(--color-aqua);
+}
 .hero-content h2 {
-  font-size: 26px;
+  font-size: 27px;
   font-weight: 700;
 }
 .hero-content h4 {
@@ -101,19 +105,19 @@ h4 {
   display: flex;
   justify-content: center;
 }
-img {
-  width: 220px;
-  aspect-ratio: 3/2;
+.my-image img {
+  /* width: 240px; */
+  height: 60vh;
+  /* aspect-ratio: 3/2; */
   object-fit: cover;
-  border-radius: 50%;
-  filter: brightness(80%);
-  filter: drop-shadow(7px 5px 5px aqua);
+  border-radius: 5%;
+  filter: brightness(70%);
   border: 2px solid aqua;
 }
-img:hover {
+.my-image img:hover {
   filter: brightness(100%);
-  transition: 0.5s;
   filter: drop-shadow(5px 5px 5px aqua);
+  transition: 1s linear;
 }
 #download-cv {
   text-transform: capitalize;
@@ -125,6 +129,7 @@ img:hover {
   background-color: #1565c0;
   cursor: pointer;
   opacity: 0.8;
+  margin-top: 10px;
 }
 #download-cv:hover {
   opacity: 1;
@@ -132,3 +137,89 @@ img:hover {
   transition: 0.3s;
 }
 /* Hero Section Style End */
+
+/* About Me Style Start */
+.AboutMe {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  align-items: center;
+  color: white;
+  padding-inline: 30px;
+}
+.AboutMe img {
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 5%;
+  filter: brightness(70%);
+  border: 2px solid aqua;
+}
+img:hover {
+  filter: brightness(100%);
+  filter: drop-shadow(5px 5px 5px aqua);
+  transition: 1s linear;
+}
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.experience h1 {
+  font-size: 32px;
+}
+.experience p {
+  font-size: 22px;
+  width: 75%;
+  text-align: justify;
+}
+/* About Me Style End */
+
+/* My Services Style Start */
+.MyServices {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 100vh;
+  color: white;
+  justify-content: center;
+}
+.MyServices h1 {
+  color: white;
+  text-align: center;
+}
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.cardOne {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 60vh;
+  width: 280px;
+  border: 2px solid aqua;
+  padding: 10px;
+}
+.cards-icon {
+  color: var(--color-aqua);
+  font-size: 24px;
+}
+.cardOne h1 {
+  color: var(--color-aqua);
+  font-size: 26px;
+}
+.cardOne button {
+  width: 200px;
+  height: 35px;
+  border: none;
+  background-color: #1565c0;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 10px;
+}
+/* My Services Style End */
