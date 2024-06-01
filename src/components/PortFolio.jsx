@@ -4,6 +4,7 @@ import HeroSection from "./HeroSection";
 import AboutMe from "./AboutMe";
 import MyServices from "./MyServices";
 import TechnicalSkills from "./TechnicalSkills";
+import ContactMe from "./ContactMe";
 
 export default function PortFolio() {
   return (
@@ -13,6 +14,7 @@ export default function PortFolio() {
       <AboutMe />
       <MyServices />
       <TechnicalSkills />
+      <ContactMe />
     </div>
   );
 }

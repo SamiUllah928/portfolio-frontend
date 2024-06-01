@@ -1,6 +1,8 @@
 import React from "react";
 import { MdOutlinePanTool } from "react-icons/md";
 import { BsFiletypeCss } from "react-icons/bs";
+import { GrIntegration } from "react-icons/gr";
+import { DiWebplatform } from "react-icons/di";
 
 export default function MyServices() {
   return (
@@ -32,7 +34,7 @@ export default function MyServices() {
           <button>Hire now</button>
         </div>
         <div className="cardOne">
-          <MdOutlinePanTool className="cards-icon" />
+          <GrIntegration className="cards-icon" />
           <h1>API Development</h1>
           <p>
             Utilizing my skills in HTML, CSS, JavaScript, and React.js, I
@@ -44,7 +46,7 @@ export default function MyServices() {
         </div>
 
         <div className="cardOne">
-          <MdOutlinePanTool className="cards-icon" />
+          <DiWebplatform className="cards-icon" />
           <h1>Web Maintenance</h1>
           <p>
             I offer website maintenance services, ensuring your site stays

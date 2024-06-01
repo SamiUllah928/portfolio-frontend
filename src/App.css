@@ -105,9 +105,10 @@ h4 {
 }
 .my-image img {
   height: 60vh;
+  /* aspect-ratio: 3/3; */
   object-fit: cover;
   border-radius: 50%;
-  filter: brightness(70%);
+  filter: brightness(90%);
   border: 2px solid aqua;
 }
 .my-image img:hover {
@@ -132,6 +133,37 @@ h4 {
   padding-left: 5px;
   transition: 0.3s;
 }
+
+/* @keyframes shake {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(5px);
+  }
+}
+.icons > * {
+  animation: shake 3s infinite;
+  margin: 0 10px;
+}
+.icons > *:hover {
+  box-shadow: 0 4px 15px rgba(20, 216, 95, 0.735),
+    0 6px 20px rgba(48, 170, 170, 0.9);
+  background-color: var(--background-color);
+}
+.facebook,
+.instagram,
+.linkedin,
+.whatsapp {
+  animation: shake 3s infinite;
+} */
 /* Hero Section Style End */
 
 /* About Me Style Start */
@@ -149,12 +181,13 @@ h4 {
   height: 55vh;
   object-fit: cover;
   border-radius: 5%;
-  filter: brightness(70%);
+  filter: brightness(100%);
   border: 2px solid aqua;
+  box-shadow: 3px 6px 15px rgba(11, 239, 255, 0.735),
+    0 6px 20px rgba(46, 212, 212, 0.9);
 }
 img:hover {
   filter: brightness(100%);
-  filter: drop-shadow(5px 5px 5px aqua);
   transition: 1s linear;
 }
 .experience {
@@ -213,7 +246,8 @@ img:hover {
   font-size: 18px;
   text-align: justify;
 }
-.cardOne button {
+.cardOne button,
+#submit {
   width: 200px;
   height: 37px;
   border: none;
@@ -233,14 +267,15 @@ img:hover {
 /* Technical Skills Style Start */
 .skills {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding-inline: 30px;
-  padding-top: 30px;
+  padding-top: 90px;
 }
 .technical h1 {
   text-align: center;
   color: var(--color-aqua);
+  border-bottom: 2px solid #7cb9d2;
 }
 .technical {
   display: flex;
@@ -250,7 +285,7 @@ img:hover {
 }
 .technical p {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 /* Html Icon Style */
 .html-per-full {
@@ -364,8 +399,88 @@ img:hover {
   font-size: 32px;
 }
 /* Technical Skills Style End */
+/* professional Skills Start */
+.professional {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.professional h1 {
+  border-bottom: 2px solid #7cb9d2;
+  color: var(--color-aqua);
+}
+.professional p {
+  color: white;
+  font-size: 18px;
+}
+/* professional Skills End */
 
-/*  */
+/* Contact me Style Start */
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-block: 50px;
+  background-color: #25d366;
+  height: 80vh;
+}
+.contact-me p {
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  padding-bottom: 10px;
+}
+.contact h1 {
+  text-align: center;
+  color: white;
+  font-size: 34px;
+}
+.main-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  place-items: center;
+  padding-inline: 20px;
+}
+.work-togather {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+.work-togather p {
+  font-size: 18px;
+  line-height: 26px;
+}
+.call-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-aqua);
+}
+#box {
+  color: var(--color-aqua);
+  font-size: 26px;
+}
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+input {
+  width: 300px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+input::placeholder {
+  padding-left: 5px;
+}
+
+/* Contact me Style End */
+
 .bar {
   display: none;
 }
@@ -406,6 +521,16 @@ img:hover {
     border-radius: 5%;
     filter: brightness(70%);
     border: 2px solid aqua;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 }
 
