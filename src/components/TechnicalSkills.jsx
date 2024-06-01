@@ -71,9 +71,7 @@ export default function TechnicalSkills() {
         </div>
       </div>
 
-      <div className="professional">
-        <h1>Professional Skills</h1>
-      </div>
+      <div className="professional">{/* <h1>Professional Skills</h1> */}</div>
     </div>
   );
 }
