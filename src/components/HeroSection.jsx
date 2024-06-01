@@ -12,7 +12,7 @@ export default function HeroSection() {
     <div className="hero-section">
       <div className="hero-content">
         <h3>Hello & Welcome, It's Me</h3>
-        <h2>SamiUllah.</h2>
+        <h1>SamiUllah.</h1>
         <h3>
           And I'm A <span className="highlight">FrontEnd Developer</span>
         </h3>

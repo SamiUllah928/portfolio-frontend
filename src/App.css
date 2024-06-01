@@ -99,6 +99,11 @@ h4 {
   color: #25d366;
   cursor: pointer;
 }
+.icons > *:hover {
+  box-shadow: 0 4px 15px rgba(20, 216, 95, 0.735),
+    0 6px 20px rgba(48, 170, 170, 0.9);
+  background-color: var(--background-color);
+}
 .my-image {
   display: flex;
   justify-content: center;
@@ -153,11 +158,7 @@ h4 {
   animation: shake 3s infinite;
   margin: 0 10px;
 }
-.icons > *:hover {
-  box-shadow: 0 4px 15px rgba(20, 216, 95, 0.735),
-    0 6px 20px rgba(48, 170, 170, 0.9);
-  background-color: var(--background-color);
-}
+
 .facebook,
 .instagram,
 .linkedin,
@@ -455,6 +456,9 @@ img:hover {
   display: flex;
   align-items: center;
   gap: 10px;
+  color: var(--color-aqua);
+}
+.call-box p {
   color: var(--color-aqua);
 }
 #box {
