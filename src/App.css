@@ -366,12 +366,18 @@ img:hover {
 /* Technical Skills Style End */
 
 /*  */
-/*  */
-
+.bar {
+  display: none;
+}
 /* RESPONSIVE START */
 @media (max-width: 700px) {
   .right {
     display: none;
+  }
+  .bar {
+    display: block;
+    color: var(--color-aqua);
+    font-size: 32px;
   }
   .hero-section {
     display: flex;
@@ -390,7 +396,7 @@ img:hover {
   }
   .AboutMe {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
   }
@@ -402,22 +408,5 @@ img:hover {
     border: 2px solid aqua;
   }
 }
-/* @media (max-width: 625px) {
-  .hero-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    justify-content: center;
-  }
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;
-  }
-} */
 
 /* RESPONSIVE END */

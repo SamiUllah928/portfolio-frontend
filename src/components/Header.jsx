@@ -1,4 +1,7 @@
 import React from "react";
+import { HiBars3BottomRight } from "react-icons/hi2";
+
+const handleBar = () => {};
 
 export default function Header() {
   return (
@@ -7,6 +10,7 @@ export default function Header() {
         <h1>Port</h1>
         <h1>Folio.</h1>
       </div>
+      <HiBars3BottomRight className="bar" onClick={handleBar} />
       <div className="right">
         <ul>
           <li>
