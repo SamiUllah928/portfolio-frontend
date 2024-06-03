@@ -22,12 +22,23 @@ export default function HeroSection() {
           and grow in a collaborative environment.
         </h4>
         <div className="icons">
-          <FaFacebook className="facebook" />
-          <FaInstagram className="instagram" />
-          <FaLinkedin className="linkedin" />
-          <FaWhatsapp className="whatsapp" />
+          <a href="https://www.facebook.com/samiullah.seith">
+            <FaFacebook className="facebook" />
+          </a>
+
+          <a href="https://www.instagram.com/iamsami4009/">
+            <FaInstagram className="instagram" />
+          </a>
+          <a href="https://www.linkedin.com/in/samiullah-iqbal/">
+            <FaLinkedin className="linkedin" />
+          </a>
+          <a href="https://wa.me/+923486084875">
+            <FaWhatsapp className="whatsapp" />
+          </a>
         </div>
-        <button id="download-cv">Download CV</button>
+        <a href="Samiullah cv.pdf" download>
+          <button id="download-cv">Download CV</button>
+        </a>
       </div>
       <div className="my-image">
         <img src={myImage} alt="No Internet" />

@@ -35,10 +35,19 @@ export default function ContactMe() {
             <p>+92348-6084875</p>
           </div>
           <div className="icons">
-            <FaFacebook className="facebook" />
-            <FaInstagram className="instagram" />
-            <FaLinkedin className="linkedin" />
-            <FaWhatsapp className="whatsapp" />
+            <a href="https://www.facebook.com/samiullah.seith">
+              <FaFacebook className="facebook" />
+            </a>
+
+            <a href="https://www.instagram.com/iamsami4009/">
+              <FaInstagram className="instagram" />
+            </a>
+            <a href="https://www.linkedin.com/in/samiullah-iqbal/">
+              <FaLinkedin className="linkedin" />
+            </a>
+            <a href="https://wa.me/+923486084875">
+              <FaWhatsapp className="whatsapp" />
+            </a>
           </div>
         </div>
         <div className="input-fields">
