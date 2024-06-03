@@ -89,6 +89,7 @@ export default function TechnicalSkills() {
           <div className="html-icon">
             <VscBook id="css" />
           </div>
+
           <p>Problem Solving</p>
           <div className="css-per-full">
             <div className="css-per-half"></div>
