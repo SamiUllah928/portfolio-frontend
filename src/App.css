@@ -11,7 +11,8 @@
 /* Header Style Start */
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 30px;
   height: 80px;
   align-items: center;
 }
@@ -77,6 +78,7 @@ h4 {
 }
 .hero-content h4 {
   line-height: 30px;
+  text-align: justify;
 }
 .icons {
   display: flex;
@@ -451,6 +453,8 @@ img:hover {
 }
 .work-togather p {
   font-size: 18px;
+  text-align: justify;
+
   line-height: 26px;
 }
 .call-box {
@@ -489,10 +493,47 @@ input::placeholder {
   display: none;
 }
 /* RESPONSIVE START */
-@media (max-width: 700px) {
+@media (max-width: 760px) {
   .right {
     display: none;
   }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 30px;
+  }
+  .experience p {
+    font-size: 20px;
+    width: 90%;
+    text-align: justify;
+  }
+  .AboutMe img {
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 5%;
+    filter: brightness(100%);
+    border: 2px solid aqua;
+    box-shadow: 3px 6px 15px rgba(11, 239, 255, 0.735),
+      0 6px 20px rgba(46, 212, 212, 0.9);
+  }
+  .work-togather p {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: justify;
+  }
+  .icons {
+    display: flex;
+  }
+  .skills {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-inline: 30px;
+    padding-top: 60px;
+  }
+
   .bar {
     display: block;
     color: var(--color-aqua);
@@ -535,6 +576,98 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     gap: 30px;
+  }
+}
+@media (max-width: 400px) {
+  /* Html Icon Style */
+  .html-per-full {
+    position: relative;
+    background-color: black;
+    width: 270px;
+    height: 5px;
+  }
+
+  .html-per-half {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00eeff;
+    width: 80%;
+    height: 5px;
+  }
+  .percentage {
+    position: absolute;
+    top: -20px;
+    left: 80%;
+    color: white;
+    font-size: 14px;
+  }
+  /* CSS Icon Style */
+  .css-per-full {
+    position: relative;
+    background-color: black;
+    width: 270px;
+    height: 5px;
+  }
+
+  .css-per-half {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00eeff;
+    width: 70%;
+    height: 5px;
+  }
+  .seventy {
+    position: absolute;
+    top: -20px;
+    left: 70%;
+    color: white;
+    font-size: 14px;
+  }
+  /* Responsive CSS Icon Style */
+  .responsive-per-full {
+    position: relative;
+    background-color: black;
+    width: 270px;
+    height: 5px;
+  }
+  .responsive-per-half {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00eeff;
+    width: 65%;
+    height: 5px;
+  }
+  .sixty-five {
+    position: absolute;
+    top: -20px;
+    left: 65%;
+    color: white;
+    font-size: 14px;
+  }
+  /* javaScript and React Icon Style */
+  .java-per-full {
+    position: relative;
+    background-color: black;
+    width: 270px;
+    height: 5px;
+  }
+  .java-per-half {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00eeff;
+    width: 60%;
+    height: 5px;
+  }
+  .sixty {
+    position: absolute;
+    top: -20px;
+    left: 60%;
+    color: white;
+    font-size: 14px;
   }
 }
 

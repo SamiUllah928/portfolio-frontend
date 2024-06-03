@@ -7,8 +7,13 @@ import {
   FaLinkedin,
   FaWhatsapp,
 } from "react-icons/fa";
+// import { useNavigate } from "react-router-dom";
 
 export default function ContactMe() {
+  // const navigate = useNavigate();
+  // const handleHeader = () => {
+  //   navigate("/");
+  // };
   return (
     <div className="contact-me">
       <div className="contact">

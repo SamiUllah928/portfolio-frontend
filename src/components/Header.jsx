@@ -1,7 +1,9 @@
 import React from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
-
+// import { useState } from "useState";
 export default function Header() {
+  // const [first, setFirst] = useState(true);
+
   return (
     <div className="header">
       <div className="left">

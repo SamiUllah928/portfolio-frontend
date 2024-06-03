@@ -11,8 +11,10 @@ export default function HeroSection() {
   return (
     <div className="hero-section">
       <div className="hero-content">
-        <h3>Hello & Welcome, It's Me</h3>
-        <h1>SamiUllah.</h1>
+        <div className="welcome">
+          <h3>Hello & Welcome, It's Me</h3>
+          <h1>SamiUllah.</h1>
+        </div>
         <h3>
           And I'm A <span className="highlight">FrontEnd Developer</span>
         </h3>
