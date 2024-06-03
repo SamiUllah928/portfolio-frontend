@@ -103,8 +103,7 @@ h4 {
   cursor: pointer;
 }
 .icons > *:hover {
-  box-shadow: 0 4px 15px rgba(20, 216, 95, 0.735),
-    0 6px 20px rgba(48, 170, 170, 0.9);
+  filter: drop-shadow(5px 5px 10px solid rgb(0, 255, 221));
   background-color: var(--background-color);
 }
 .my-image {
@@ -133,46 +132,22 @@ h4 {
   border-radius: 20px;
   background-color: #1565c0;
   cursor: pointer;
-  opacity: 0.8;
   margin-top: 10px;
+  animation: color 2s ease-in 2s 10 normal;
 }
+
 #download-cv:hover {
   opacity: 1;
   padding-left: 5px;
-  transition: 0.3s;
+  transition: 0.5s ease-in;
+  background-color: white;
+  color: #0077b5;
 }
 
-/* @keyframes shake {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateX(5px);
-  }
-  60% {
-    transform: translateX(5px);
-  }
-}
-.icons > * {
-  animation: shake 3s infinite;
-  margin: 0 10px;
-}
-
-.facebook,
-.instagram,
-.linkedin,
-.whatsapp {
-  animation: shake 3s infinite;
-} */
 /* Hero Section Style End */
 
 /* About Me Style Start */
 .AboutMe {
-  /* width: 100%; */
   display: flex;
   justify-content: space-around;
   gap: 20px;
@@ -260,6 +235,7 @@ img:hover {
   color: white;
   border-radius: 10px;
   opacity: 0.8;
+  cursor: pointer;
 }
 .cardOne button:hover {
   border: 1px solid aqua;
@@ -538,6 +514,7 @@ input::placeholder {
     display: block;
     color: var(--color-aqua);
     font-size: 32px;
+    cursor: pointer;
   }
   .hero-section {
     display: flex;
@@ -668,6 +645,24 @@ input::placeholder {
     left: 60%;
     color: white;
     font-size: 14px;
+  }
+  .AboutMe img {
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 5%;
+    filter: brightness(100%);
+    border: 2px solid aqua;
+    box-shadow: 3px 6px 15px rgba(11, 239, 255, 0.735),
+      0 6px 20px rgba(46, 212, 212, 0.9);
+  }
+  .AboutMe {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    padding: 0px 30px;
+    padding-bottom: 35px;
   }
 }
 
