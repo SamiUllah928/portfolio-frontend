@@ -3,8 +3,10 @@ import { MdOutlinePanTool } from "react-icons/md";
 import { BsFiletypeCss } from "react-icons/bs";
 import { GrIntegration } from "react-icons/gr";
 import { DiWebplatform } from "react-icons/di";
+import { useNavigate } from "react-router-dom";
 
 export default function MyServices() {
+  const navigate = useNavigate();
   return (
     <div className="MyServices">
       <h1>
@@ -20,7 +22,7 @@ export default function MyServices() {
             using HTML, CSS, JavaScript, and React.js. Let me help you improve
             your online presence with user-friendly and attractive websites.
           </p>
-          <button>Contact</button>
+          <button onClick={() => navigate("/contact")}>Contact</button>
         </div>
         <div className="cardOne">
           <BsFiletypeCss className="cards-icon" />
@@ -31,7 +33,7 @@ export default function MyServices() {
             perfectly on desktops, tablets, and mobile devices, providing a
             seamless user experience.
           </p>
-          <button>Hire now</button>
+          <button onClick={() => navigate("/contact")}>Hire now</button>
         </div>
         <div className="cardOne">
           <GrIntegration className="cards-icon" />
@@ -42,7 +44,7 @@ export default function MyServices() {
             website's functionality and user experience with modern,
             well-crafted front-end solutions.
           </p>
-          <button>hire</button>
+          <button onClick={() => navigate("/contact")}>hire</button>
         </div>
 
         <div className="cardOne">
@@ -54,7 +56,7 @@ export default function MyServices() {
             and improve the user experience so you can focus on growing your
             business.
           </p>
-          <button>Hire me </button>
+          <button onClick={() => navigate("/contact")}>Hire me </button>
         </div>
       </div>
     </div>
