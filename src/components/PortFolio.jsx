@@ -5,15 +5,16 @@ import AboutMe from "./AboutMe";
 import MyServices from "./MyServices";
 import TechnicalSkills from "./TechnicalSkills";
 import ContactMe from "./ContactMe";
+import LatestProject from "./LatestProject";
 
 export default function PortFolio() {
   return (
     <div>
-      <Header />
       <HeroSection />
       <AboutMe />
       <MyServices />
       <TechnicalSkills />
+      <LatestProject />
       <ContactMe />
     </div>
   );

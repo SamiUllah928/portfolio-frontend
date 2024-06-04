@@ -1,8 +1,10 @@
 import React from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
+import { useNavigate } from "react-router-dom";
 // import { useState } from "useState";
 export default function Header() {
   // const [first, setFirst] = useState(true);
+  const navigate = useNavigate();
 
   return (
     <div className="header">
@@ -13,23 +15,23 @@ export default function Header() {
       <HiBars3BottomRight className="bar" />
       <div className="right">
         <ul>
-          <li>
-            <a href="#">Home</a>
+          <li onClick={() => navigate("/")}>
+            <a>Home</a>
           </li>
-          <li>
-            <a href="#">Services</a>
+          <li onClick={() => navigate("/services")}>
+            <a>Services</a>
           </li>
-          <li>
-            <a href="#">Skills</a>
+          <li onClick={() => navigate("/skills")}>
+            <a>Skills</a>
           </li>
-          <li>
-            <a href="#">Projects</a>
+          <li onClick={() => navigate("/project")}>
+            <a>Projects</a>
           </li>
-          <li>
-            <a href="#">About</a>
+          <li onClick={() => navigate("/about")}>
+            <a>About</a>
           </li>
-          <li>
-            <a href="#">Contact</a>
+          <li onClick={() => navigate("/contact")}>
+            <a>Contact</a>
           </li>
         </ul>
       </div>

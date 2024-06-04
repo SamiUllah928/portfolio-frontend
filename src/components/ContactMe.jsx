@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
 import {
@@ -10,10 +10,29 @@ import {
 // import { useNavigate } from "react-router-dom";
 
 export default function ContactMe() {
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [subject, setSubject] = useState();
   // const navigate = useNavigate();
   // const handleHeader = () => {
   //   navigate("/");
   // };
+
+  const handleEmail = () => {
+    fetch("http://localhost:5000/email", {
+      method: "POST",
+      body: JSON.stringify({
+        email,
+        name,
+        subject,
+      }),
+      headers: {
+        "Content-Type": "Application/json",
+      },
+    })
+      .then((e) => e.json().then((res) => console.log(res)))
+      .catch((err) => console.log(err));
+  };
   return (
     <div className="contact-me">
       <div className="contact">
@@ -56,10 +75,27 @@ export default function ContactMe() {
           </div>
         </div>
         <div className="input-fields">
-          <input type="text" placeholder="Enter your Name" required />
-          <input type="text" placeholder="Enter Email" required />
-          <input type="text" placeholder="Subject" required />
-          <button id="submit">Submit</button>
+          <input
+            type="text"
+            placeholder="Enter your Name"
+            required
+            onChange={(e) => setName(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Enter Email"
+            required
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Subject"
+            required
+            onChange={(e) => setSubject(e.target.value)}
+          />
+          <button id="submit" onClick={handleEmail}>
+            Submit
+          </button>
         </div>
       </div>
       <p>&copy; 2024 SamiUllah</p>
