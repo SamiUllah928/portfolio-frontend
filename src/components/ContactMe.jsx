@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
+import axios from "axios";
 import {
   FaFacebook,
   FaInstagram,
@@ -13,25 +14,47 @@ export default function ContactMe() {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [subject, setSubject] = useState();
+  const [message, setMessage] = useState();
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+  const [loading, setLoading] = useState(false);
   // const navigate = useNavigate();
   // const handleHeader = () => {
   //   navigate("/");
   // };
 
-  const handleEmail = () => {
-    fetch("http://localhost:5000/email", {
-      method: "POST",
-      body: JSON.stringify({
+  const handleEmail = async () => {
+    try {
+      setLoading(true);
+      const data = {
         email,
         name,
         subject,
-      }),
-      headers: {
-        "Content-Type": "Application/json",
-      },
-    })
-      .then((e) => e.json().then((res) => console.log(res)))
-      .catch((err) => console.log(err));
+        message,
+      };
+
+      const response = await axios.post(
+        process.env.REACT_APP_BACKEND + "email",
+        data
+      );
+      setSuccess(response.data.message);
+      setLoading(false);
+
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
+      setTimeout(() => {
+        setSuccess("");
+      }, 3000);
+    } catch (error) {
+      setLoading(false);
+
+      setError(error?.response?.data?.message);
+      setTimeout(() => {
+        setError("");
+      }, 3000);
+    }
   };
   return (
     <div className="contact-me">
@@ -79,22 +102,38 @@ export default function ContactMe() {
             type="text"
             placeholder="Enter your Name"
             required
+            value={name}
             onChange={(e) => setName(e.target.value)}
           />
           <input
             type="text"
             placeholder="Enter Email"
             required
+            value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
             type="text"
             placeholder="Subject"
             required
+            value={subject}
             onChange={(e) => setSubject(e.target.value)}
           />
+          {/* New add */}
+          <input
+            type="text"
+            placeholder="Type something here..."
+            required
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
+          {/* New add */}
+
+          {error && <div className="error-message">*{error}</div>}
+          {success && <div className="success-message">*{success}</div>}
+
           <button id="submit" onClick={handleEmail}>
-            Submit
+            {loading ? <span className="loading" /> : "Submit"}
           </button>
         </div>
       </div>

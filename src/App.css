@@ -136,7 +136,8 @@ h4 {
   animation: color 2s ease-in 2s 10 normal;
 }
 
-#download-cv:hover {
+#download-cv:hover,
+#submit:hover {
   opacity: 1;
   padding-left: 5px;
   transition: 0.5s ease-in;
@@ -233,10 +234,31 @@ img:hover {
   background-color: #1565c0;
   text-transform: uppercase;
   color: white;
-  border-radius: 10px;
+  border-radius: 8px;
   opacity: 0.8;
   cursor: pointer;
+  position: relative;
 }
+.loading {
+  position: absolute;
+  inset-block: 8px;
+  width: 20px;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid rgb(0, 255, 119);
+  border-left: transparent;
+  border-top: transparent;
+  animation: circluler 1s linear infinite forwards;
+}
+@keyframes circluler {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .cardOne button:hover {
   border: 1px solid aqua;
   opacity: 1;
@@ -458,7 +480,9 @@ input {
   border: none;
   border-radius: 5px;
   outline: none;
+  padding: 10px;
 }
+
 input::placeholder {
   padding-left: 5px;
 }
@@ -702,4 +726,14 @@ input::placeholder {
   color: white;
   font-size: 30px;
   margin-top: 100px;
+}
+
+.error-message {
+  color: rgb(255, 100, 100);
+  font-size: 14px;
+}
+
+.success-message {
+  color: green;
+  font-size: 14px;
 }
