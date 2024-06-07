@@ -93,6 +93,14 @@ h4 {
   gap: 20px;
   font-size: 35px;
 }
+.icons a {
+  /* display: inline-block; */
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+.icons a:hover {
+  transform: scale(1.2);
+}
 .facebook {
   color: #1877f2;
   cursor: pointer;
@@ -219,6 +227,10 @@ img:hover {
   width: 280px;
   border: 2px solid aqua;
   padding: 10px;
+}
+.cardOne.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 .cards-icon {
   color: var(--color-aqua);

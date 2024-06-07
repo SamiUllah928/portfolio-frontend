@@ -38,7 +38,7 @@ export default function HeroSection() {
             <FaWhatsapp className="whatsapp" />
           </a>
         </div>
-        <a href="Samiullah cv.pdf" download>
+        <a href="SAMIULLAH Front-end.pdf" download>
           <button id="download-cv">Download CV</button>
         </a>
       </div>
